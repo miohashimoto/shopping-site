@@ -1,3 +1,25 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
 
+/*ヘッダー==========*/
+header {
+  background: #f9f8f6; }
+  header #header_in {
+    padding-top: 10px;
+    padding-bottom: 5px; }
+    header #header_in .navi {
+      margin-top: 3rem; }
+      header #header_in .navi .pc_navi {
+        margin: 0;
+        padding: 0; }
+        header #header_in .navi .pc_navi .pc_navi_li {
+          text-align: right;
+          margin: 0;
+          padding: 0; }
+          header #header_in .navi .pc_navi .pc_navi_li li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 8px 0 0; }
 
 /*# sourceMappingURL=style.css.map */
