@@ -11,35 +11,121 @@ html {
 $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 
 $base : #f9f8f6;
-$strong : #887f69;
+$label : #887f69;
 $sub : #b0b0b0;
 $red :#9d1a2d;
+
+body{background: $base ;}
 
 /*ヘッダー==========*/
 header{
   background: $base;
-  
-  #header_in{
-    padding-top: 10px;
-    padding-bottom:5px;
- 
-.navi{margin-top:3rem;
-
- .pc_navi{
-      margin:0;
-      padding:0;
-      
-    .pc_navi_li{ 
-      text-align:right;
-      margin:0;
-      padding:0;
-      li{list-style:none;
-        display:inline-block;
-        margin:0 8px 0 0;
-        
-      }//li
-    }//pc_navi_li
-    }//pc_navi   
-}//navi
+  #header_in{padding-top:20px;
+#logo img{max-width: 140px;}
+.pc_navi{text-align: right;
+    li{
+	display: inline-block;
+	list-style: none;
+    }//li
+}//pc_navi
 }//header_in
 }//header
+
+
+/*カルーセル====================*/
+#carousel img{ max-width: 100%;
+			}
+
+/*メイン====================*/
+.main{
+	margin-top:2rem; }
+
+
+.item_area{background-color: $base;
+  padding-bottom:2rem;
+  .pc_title h2 img{
+    max-width:100%;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+.box{
+	 display: flex;
+	 flex-wrap:wrap;
+	justify-content:space-between;
+	align-items: stretch;
+}
+.item{background-color: #FFFFFF;
+		width: 33.1%;
+		margin-bottom:0.2rem;
+		}
+.item img,p{
+  max-width:100%;
+  padding:1.5rem;
+}
+
+
+}//item_area
+
+.guide{margin-top:2rem;
+.guidebox{display:flex;
+  flex-wrap:wrap;
+	justify-content:space-between;
+	align-items: stretch;
+}
+.guidance{background:#fff;
+	padding:1.5rem;
+		width:45%;
+    margin-bottom:2rem;
+		  h3{color:$label ;
+		    font-size:1.6rem;
+		  }
+		  
+		  .guidetext{color:$label;}
+
+	}
+}
+/*右メニュー==================*/
+.sidebar ul li{list-style: none;
+				}
+
+/*SP========================*/
+@media(max-width:550px){
+	.container{text-align: center;}
+	.pc_navi{display: none;}
+	.pc_title {display: none;}
+	.sp_navi li{list-style: none;
+				display: inline-block;
+	}
+	.box{flex-wrap:wrap;
+		align-content: space-around;
+	.item{
+	  	width: 49.7%;
+			margin: 0 0 0.2rem 0;
+	
+	img{
+	    padding:1.2rem;
+	    max-width: 85%;
+	    
+	}
+}//item
+}//box
+.guidebox{
+  flex-direction:column;
+	justify-content:space-between;
+	align-items: stretch;
+
+	.guidance{width: 92%;
+	}
+}	
+	.sideber{marin:0;}
+}
+
+
+/*PC========================*/
+@media(min-width:550px){
+	.sp_navi{display: none;}
+	.sideber ul li{margin: 10% 0 20% 10%;}
+	.sp_title{display:none;}
+}
