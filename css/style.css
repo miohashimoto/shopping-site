@@ -42,10 +42,10 @@ header {
   .item_area .item {
     background-color: #FFFFFF;
     width: 33.1%;
-    margin-bottom: 0.2rem; }
-  .item_area .item img, .item_area p {
-    max-width: 100%;
+    margin-bottom: 0.2rem;
     padding: 1.5rem; }
+  .item_area .item img {
+    max-width: 100%; }
 
 .guide {
   margin-top: 2rem; }
