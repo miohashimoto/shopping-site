@@ -3,7 +3,27 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: #f9f8f6; }
+  background: #f9f8f6;
+  font-size: 1.2rem; }
+
+a:link {
+  text-decoration: none;
+  color: #000; }
+
+a:visited {
+  text-decoration: none;
+  color: #000; }
+
+a:hover {
+  text-decoration: none;
+  color: #535353; }
+
+a:active {
+  text-decoration: none;
+  color: #535353; }
+
+a:hover img {
+  opacity: 0.7; }
 
 /*ヘッダー==========*/
 header {
@@ -13,10 +33,16 @@ header {
     header #header_in #logo img {
       max-width: 140px; }
     header #header_in .pc_navi {
-      text-align: right; }
+      text-align: right;
+      margin-top: 3.2rem; }
       header #header_in .pc_navi li {
         display: inline-block;
-        list-style: none; }
+        list-style: none;
+        margin-left: 2rem; }
+      header #header_in .pc_navi li:first-child {
+        margin: 0; }
+      header #header_in .pc_navi li:last-child {
+        margin-left: 1rem; }
 
 /*カルーセル====================*/
 #carousel img {
@@ -46,6 +72,10 @@ header {
     padding: 1.5rem; }
   .item_area .item img {
     max-width: 100%; }
+  .item_area .list_name {
+    margin-bottom: 20px; }
+  .item_area .list_price {
+    margin-bottom: 5px; }
 
 .guide {
   margin-top: 2rem; }
@@ -57,17 +87,84 @@ header {
   .guide .guidance {
     background: #fff;
     padding: 1.5rem;
-    width: 45%;
+    width: 49%;
     margin-bottom: 2rem; }
     .guide .guidance h3 {
       color: #887f69;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      font-weight: bold; }
+    .guide .guidance img {
+      margin: 0; }
+    .guide .guidance P {
+      margin-bottom: 1rem; }
+    .guide .guidance p.guidetext {
+      margin: 0; }
     .guide .guidance .guidetext {
       color: #887f69; }
 
 /*右メニュー==================*/
 .sidebar ul li {
   list-style: none; }
+
+li.search {
+  background-color: #fff; }
+
+li.pagelink, li.categry, li.about {
+  background: #887f69;
+  height: 25px;
+  padding: 1.4rem 1rem 0.6rem 1rem; }
+
+li.pagelink {
+  background-repeat: no-repeat;
+  background-image: url("../images/top/next_icon.png");
+  background-position: 95% 50%; }
+
+li.categry {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: url("../images/top/down_icon.png");
+  background-position: 95% 50%; }
+
+li.categrylist {
+  background-color: #fff;
+  height: 25px;
+  padding: 1.2rem 1rem 0.8rem 1rem;
+  margin: 0;
+  border-top: 1px solid;
+  border-color: #f9f8f6;
+  background-repeat: no-repeat;
+  background-image: url("../images/top/next_icon_gray.png");
+  background-position: 95% 50%; }
+
+li.about {
+  margin-top: 1rem;
+  margin-bottom: 0; }
+
+.shopabout {
+  background-color: #fff;
+  padding: 1rem; }
+  .shopabout img {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem; }
+
+/*フッター==================*/
+footer {
+  text-align: center; }
+  footer hr {
+    border-color: #887f69; }
+  footer ul {
+    margin-bottom: 1rem; }
+  footer ul li {
+    display: inline-block;
+    margin-right: 2rem;
+    list-style: none; }
+  footer ul li.policy :before {
+    content: "・　"; }
+  footer .copy {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #b8b4ac; }
 
 /*SP========================*/
 @media (max-width: 550px) {
@@ -82,7 +179,11 @@ header {
 
   .sp_navi li {
     list-style: none;
-    display: inline-block; }
+    display: inline-block;
+    margin-left: 1rem; }
+
+  .sp_navi li:first-child {
+    margin-left: 0; }
 
   .box {
     flex-wrap: wrap;
@@ -91,18 +192,27 @@ header {
       width: 49.7%;
       margin: 0 0 0.2rem 0; }
       .box .item img {
-        padding: 1.2rem;
-        max-width: 85%; }
+        max-width: 100%; }
 
   .guidebox {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch; }
     .guidebox .guidance {
-      width: 92%; }
+      width: 100%;
+      text-align: left; }
 
-  .sideber {
-    marin: 0; } }
+  .sidebar {
+    text-align: left; }
+    .sidebar .shopabout {
+      display: flex;
+      flex-grow: 1; }
+      .sidebar .shopabout .sp_shop {
+        width: 50%; }
+
+  .pagetop {
+    text-align: center;
+    font-size: 2.4em; } }
 /*PC========================*/
 @media (min-width: 550px) {
   .sp_navi {
@@ -112,6 +222,9 @@ header {
     margin: 10% 0 20% 10%; }
 
   .sp_title {
-    display: none; } }
+    display: none; }
+
+  .pagetop {
+    text-align: right; } }
 
 /*# sourceMappingURL=style.css.map */
