@@ -114,26 +114,33 @@ header{
 li.search{background-color:#fff;
 				height:7rem;
 				padding:1.1rem 1.5rem;
-				
-.search_w{
-	height:3rem;
-	margin-top:1rem;
-	background-repeat:no-repeat;
-	 background-color:#eeeeee;
-	 background-image: url("../images/top/search_icon.png");
-	background-position: 95% 50% ;
+
+
+#searchform {  
+    position: relative;   
+}  
+#keywords {  
+    width: 100%;  
+    margin-top:0.5rem;
+    height: 4rem;  
+    background: #eeeeee;  
+    border: none;  
+    padding: 0.5rem;  
+    color: #b5b5b5;  
+}  
+#searchBtn {  
+    position: absolute;
+    top: 30%;  
+    _top: 30%;  
+    left: 88%; 
+}  
+*:first-child + html #searchBtn   {  
+    top: 30%;  
+}  
 	
-p{color:#b5b5b5;
-	font-size:1.1rem;
-	position: relative;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	padding:0.5rem;
-}
+
 	
-}	
-	
+
 
 }
 	
@@ -204,13 +211,31 @@ ul li.policy :before { content:"・　"; }
 }
 }
 
+/*パンくず=================*/
+.topicpath{background-color:#e8e4da;
+		margin-bottom:1rem;
+		border-radius:3px;
+		padding:1rem;
+		color: $label;
+		a:link {
+    text-decoration: none;
+    color: $label;}
+    	a:hover {
+    text-decoration: none;
+    color: #a59a80;}
+		
+}
+
+/*タイトル画像=================*/
+.list_title_pc{margin-bottom:0.5rem;
+ img{width:100%;}	
+}
 /*SP========================*/
-@media(max-width:550px){
+@media(max-width:768px){
 	#logo{margin-bottom:0;}
 	.container{text-align: center;}
 	.main{margin-top:0;}
-	.pc_navi{display: none;}
-	.pc_title {display: none;}
+	.pc_navi,.pc_title,.list_title_pc{display: none;}
 	.sp_navi{margin:0;}
 	.sp_navi li{list-style: none;
 				display: inline-block;
@@ -248,15 +273,17 @@ ul li.policy :before { content:"・　"; }
 	
 .pagetop{
 	text-align:center;
-	font-size:2.4em;
+	font-size:2rem;
 }
+.topicpath{text-align:left;}
+
 }
 
 
 
 /*PC========================*/
-@media(min-width:550px){
-	.sp_navi{display: none;}
+@media(min-width:768px){
+	.sp_navi,.list_title_sp{display: none;}
 	.sideber ul li{margin: 10% 0 20% 10%;}
 	.sp_title{display:none;}
 	.pagetop{text-align:right;}
