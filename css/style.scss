@@ -73,8 +73,8 @@ header{
 	align-items: stretch;
 }
 .item{background-color: #FFFFFF;
-		width: 33.1%;
-		margin-bottom:0.2rem;
+		width: 33.15%;
+		margin-bottom:0.15rem;
 		padding:1.5rem;
 		}
 .item img{
@@ -218,17 +218,152 @@ ul li.policy :before { content:"・　"; }
 		padding:1rem;
 		color: $label;
 		a:link {
-    text-decoration: none;
-    color: $label;}
+    		text-decoration: none;
+    		color: $label;}
+    	a:visited{
+    		text-decoration:none; 
+    		color:$label;}
     	a:hover {
-    text-decoration: none;
-    color: #a59a80;}
-		
-}
+    		text-decoration: none;
+    		color: #a59a80;}
+    
 
+		
+}//topicpaath//
+
+/*listページ===================================*/
 /*タイトル画像=================*/
 .list_title_pc{margin-bottom:0.5rem;
  img{width:100%;}	
+}
+/*商品詳細ページ===================================*/
+.products_area{
+	background-color:#fff;
+	padding:4rem 6rem;
+
+.products_ttl{display:flex;
+  flex-wrap:wrap;
+	justify-content:space-between;
+		align-items: stretch;
+
+	
+}
+	
+h2{font-size:1.4rem;
+	font-weight:bold;
+	letter-spacing:0.4rem;
+}
+.number{
+	color:#a6a6a6;
+	
+}
+
+hr{
+	border-color:#e3e8cf;
+	margin:1rem 0;
+}
+.slideshow{display: flex;
+	 flex-wrap:wrap;
+	justify-content:space-between;
+	flex-direction:stretch;
+}
+
+#display_img{margin:0;
+			padding:0;
+			width:70%;
+	img{max-width:100%;
+		padding-right:1rem;
+	}
+}
+
+#list_img{width:30%;
+	display:flex;
+  flex-wrap:wrap;
+	justify-content:space-between;
+		align-items: stretch;
+
+	
+.list_imege{width:48%;}
+
+
+img{width:100%;
+	cursor: pointer;
+	margin-bottom:0.2rem ;
+	padding:0;
+
+}
+}
+
+.detail{display: flex;
+	 flex-wrap:wrap;
+	justify-content:space-between;
+	justify-direction:stretch;
+	
+	.price{width:55%;
+	}
+	.buy{width:45%;
+		input{width:95%;
+		padding-left:5%;
+		}
+		border-bottom:1px solid #e3e8cf;
+	}
+	
+}
+table{width:100%;
+	border:1px solid #e3e8cf;
+	th,td{background-color:$base;
+	color:$label;
+		font-weight:normal;
+			border:1px solid #e3e8cf;
+				text-align:center;
+	}
+	td{background-color:#fff;
+	padding: 0;
+vertical-align: bottom;
+	}
+}
+
+.detail{
+	table{border-left:hidden;
+			border-right:hidden;
+		margin-bottom:0;
+		
+		
+	th,td{background-color:#fff;
+			color:#000;
+			padding:0;
+			margin:0;
+			text-align:left;
+			vertical-align:middle;
+			span{color:#e80f66;
+				font-size:2.2rem;}
+		}
+		
+	th{width:40%;
+		border-right:hidden;
+	}	
+	
+	td{vertical-align:middle;
+	input{margin-bottom:0;}
+	}
+	
+
+		
+	}
+}
+
+.Pro_explanation{margin-top:3rem;
+	h3,h4{color:$label;	
+		font-size:1.6rem;
+		font-weight:bold;
+		border-bottom:1px solid $label;
+		letter-spacing:0.1rem;
+		}
+		h3{padding-bottom:1.5rem;}
+		h4{border:none;}
+		td{vertical-align:middle;}
+}
+
 }
 /*SP========================*/
 @media(max-width:768px){
@@ -245,7 +380,7 @@ ul li.policy :before { content:"・　"; }
 	.box{flex-wrap:wrap;
 		align-content: space-around;
 	.item{
-	  	width: 49.7%;
+	  	width: 49.8%;
 			margin: 0 0 0.2rem 0;
 	
 	img{
@@ -277,9 +412,62 @@ ul li.policy :before { content:"・　"; }
 }
 .topicpath{text-align:left;}
 
+
+
+/*SP listページ-----------*/
+.list_title_sp{width:100%;}
+
+/*SP productsページ-----------*/
+.products_area{padding:2rem 1rem;
+text-align:left;
+.products_ttl{flex-direction:column;
+	h2{margin-bottom:0.5rem;}
+}
+.slideshow{
+	 flex-direction:column;}
+#display_img{width:100%;
+			margin:0;
+			padding:0;
+			text-align:center;
+	img{max-width:100%;
+		padding:0;
+	}
 }
 
+#list_img{
+	width:100%;
+	display:flex;
+  flex-wrap:wrap;
+	justify-content:space-between;
+		align-items: stretch;
+	.list_imege{width:18%;	}
+	img{width:100%;
+	cursor: pointer;
+	margin-bottom:0.5rem ;
+	padding:0;
 
+}
+}
+h3{margin-bottom:0.5rem;}
+.detail{flex-direction:column;
+
+.price{width:100%;
+	td p{margin-top: 1.5rem; }
+}
+.buy{margin-top:2rem;
+	text-align:center;
+	width:100%;
+	border-bottom:none;
+	input{width:75%;
+		padding:0;
+		text-align:center;
+	}
+}
+}
+	
+}//products_area//
+
+}//max-width:768px//
 
 /*PC========================*/
 @media(min-width:768px){
@@ -288,4 +476,10 @@ ul li.policy :before { content:"・　"; }
 	.sp_title{display:none;}
 	.pagetop{text-align:right;}
 
-}
+
+/*products-----------*/
+
+
+
+
+}//min-width:768px
