@@ -217,6 +217,7 @@ ul li.policy :before { content:"・　"; }
 		border-radius:3px;
 		padding:1rem;
 		color: $label;
+		letter-spacing:0.1rem;
 		a:link {
     		text-decoration: none;
     		color: $label;}
@@ -377,6 +378,8 @@ vertical-align: bottom;
 				margin-left:1rem;
 	}
 	.sp_navi li:first-child{margin-left:0;}
+	.sp_menu{cursor: pointer;}
+	.sp_menu_toggle{display: none;}
 	.box{flex-wrap:wrap;
 		align-content: space-around;
 	.item{

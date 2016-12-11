@@ -53,12 +53,21 @@
         <!--スライドショー-->
         <script>
         $(window).load(function(){
-  $("#list_img img").click(function(){
-    var img_src = $(this).attr("src");
-    $("#display_img img").attr("src", img_src);
-  });
-});
-</script>
+      $("#list_img img").click(function(){
+      var img_src = $(this).attr("src");
+      $("#display_img img").attr("src", img_src);
+      });
+      });
+  </script>
+
+        <script>
+          $(document).ready(function(){
+          $("#sp_menu").click(function(){
+          $(".sp_menu_toggle").slideToggle();
+          });
+        });
+        </script>
+
 </head>
 <body>
 
@@ -124,9 +133,15 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <div id="sp_menu">
                     <img src="images/top_sp/icon.png" alt="guide" srcset="images/top_sp/menu_icon@2x.png 2x" />
-                  </a>
+                  </div>
+                  <ul class="sp_menu_toggle">
+                    <li><a href="">ログイン</a></li>
+                    <li><a href="">カート</a></li>
+                    <li><a href="">マイページ</a></li>
+                    <li><a href="">ショッピングガイド</a></li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -145,7 +160,7 @@
         <div class="nine columns">
           <div class="topicpath">
             <a href="index.html">
-              <img src="images/list/home_icon.png" alt="home"/>HOME
+              <img src="images/list/home_icon.png" alt="home"/>&nbsp;HOME
             </a>&nbsp;/&nbsp; 
             <a href="list.html">カテゴリー名</a>&nbsp;/&nbsp;
             <a href="products.html">商品名</a>
@@ -243,7 +258,7 @@
                 </table>
               </div>
               <div class="buy">
-                <input type="image" src="images/products/add_to_cart.png" alt"add to cart" class"u-max-fulli-width" />
+                <input type="image" src="images/products/add_to_cart.png" alt"add to cart" class="u-max-fulli-width" />
               </div>
             </div>
             <!--/detail-->

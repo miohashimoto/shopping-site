@@ -192,7 +192,8 @@ footer {
   margin-bottom: 1rem;
   border-radius: 3px;
   padding: 1rem;
-  color: #887f69; }
+  color: #887f69;
+  letter-spacing: 0.1rem; }
   .topicpath a:link {
     text-decoration: none;
     color: #887f69; }
@@ -339,6 +340,12 @@ footer {
 
   .sp_navi li:first-child {
     margin-left: 0; }
+
+  .sp_menu {
+    cursor: pointer; }
+
+  .sp_menu_toggle {
+    display: none; }
 
   .box {
     flex-wrap: wrap;
