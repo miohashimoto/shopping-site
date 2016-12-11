@@ -237,6 +237,27 @@ ul li.policy :before { content:"・　"; }
 .list_title_pc{margin-bottom:0.5rem;
  img{width:100%;}	
 }
+.pager{display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+		align-items: stretch;
+		margin-top:2rem;
+		.nextpage,.frontpage{
+			width:12rem;
+			height:4rem;
+			font-size:1.4rem;
+			font-weight:bold;
+			background-color:$label;
+			color:#fff;
+			display:table-cell;
+			text-align:center;
+			vertical-align:middle;
+		}
+		
+		}
+
+
+
 /*商品詳細ページ===================================*/
 .products_area{
 	background-color:#fff;
