@@ -401,6 +401,17 @@ vertical-align: bottom;
 	.sp_navi li:first-child{margin-left:0;}
 	.sp_menu{cursor: pointer;}
 	.sp_menu_toggle{display: none;}
+	.sp_menu_toggle li{display: block;
+	margin:0;
+    padding: 5px;
+    border:1px solid $sub;
+    border-bottom:none;
+    font-size: 1.2rem;
+    text-decoration: none;
+	}
+	.sp_menu_toggle li:last-child{
+		border-bottom:1px solid $sub;
+	}
 	.box{flex-wrap:wrap;
 		align-content: space-around;
 	.item{
