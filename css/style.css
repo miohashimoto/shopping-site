@@ -369,7 +369,8 @@ footer {
     align-content: space-around; }
     .box .item {
       width: 49.8%;
-      margin: 0 0 0.2rem 0; }
+      margin: 0 0 0.2rem 0;
+      text-align: left; }
       .box .item img {
         max-width: 100%; }
 
