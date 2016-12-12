@@ -362,7 +362,7 @@ vertical-align: bottom;
 		
 	th,td{background-color:#fff;
 			color:#000;
-			padding:0;
+			padding:0.5rem;
 			margin:0;
 			text-align:left;
 			vertical-align:middle;
@@ -427,7 +427,8 @@ vertical-align: bottom;
                 padding:2rem;
                 margin-left:-2rem;
               }
-              
+     
+     .sp_menu_toggle ul{list-style: none;}      
     .sp_menu_toggle li{list-style: none;
                    border-bottom: 1px solid #fff;
                  font-size:1.5rem; 

@@ -51,11 +51,11 @@
         });
         </script>
         <script>
-  $(document).ready(function(){
-  $("#sp_menu").click(function(){
-    $(".sp_menu_toggle").slideToggle();
-  });
-});
+        $(document).ready(function(){
+        $("#sp_menu").click(function(){
+         $(".sp_menu_toggle").slideToggle();
+       });
+      });
 </script>
 </head>
 <body>
@@ -110,29 +110,29 @@
                   </a>
                 </li>
               </ul>
-              <ul class="sp_navi">
-                <li>
+              <div class="sp_navi">
+                <div class="spnavi_list clearfix">      
+                 <div class="fl">
                   <a href="#">
-                    <img src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x" />
+                  <img class="u-max-full-width" src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x" />
                   </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png 2x" />
-                  </a>
-                </li>
-                <li>
-                  <div id="sp_menu">
-                    <img src="images/top_sp/menu_icon.png" alt="guide" srcset="images/top_sp/menu_icon@2x.png 2x" />
-                  </div>
-                  <ul class="sp_menu_toggle">
-                    <li><a href="">ログイン</a></li>
-                    <li><a href="">カート</a></li>
-                    <li><a href="">マイページ</a></li>
-                    <li><a href="">ショッピングガイド</a></li>
-                  </ul>
-                </li>
-              </ul>
+              </div>
+              <div class="fl">
+                <a href="#">
+                <img class="u-max-full-width" src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png 2x" />
+                </a>
+              </div>
+            <div id="sp_menu" class="fl">
+            <img class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="guide" srcset="images/top_sp/menu_icon@2x.png 2x" />
+            </div>
+          </div>     
+             <ul class="sp_menu_toggle">
+              <li><a href="#">ログイン</a></li>
+              <li><a href="">カート</a></li>
+              <li><a href="">マイページ</a></li>
+            <li><a href="">ショッピングガイド</a></li>
+            </ul>
+            </div>
             </div>
             <!--/nine columns-->
           </div>
@@ -354,6 +354,7 @@
               <li class="about">
                 <img src="images/top/about.png" alt="about"/>
               </li>
+              <li>
               <div class="shopabout">
                 <div class="sp_shop">
                   <img class="u-max-full-width" src="images/top/about_img.jpg" alt="about"/>
@@ -365,9 +366,11 @@
                   </a>
                 </div>
               </div>
+              </li>
               <li class="about">
                 <img src="images/top/shop_info.png" alt="shop info"/>
               </li>
+              <li>
               <div class="shopabout">
                 <div class="sp_shop">
                   <img class="u-max-full-width" src="images/top/shopinfo_img.jpg" alt="shop info"/>
@@ -379,6 +382,7 @@
                   </a>
                 </div>
               </div>
+              </li>
             </ul>
           </div>
           <!--/sidebar-->
