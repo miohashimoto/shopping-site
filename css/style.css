@@ -373,6 +373,7 @@ footer {
     cursor: pointer; }
 
   .sp_menu_toggle {
+    display: none;
     width: 100%;
     background-color: #ff6d77;
     padding: 2rem;

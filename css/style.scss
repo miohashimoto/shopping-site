@@ -420,16 +420,19 @@ vertical-align: bottom;
      #sp_menu{
               cursor:pointer;
             }
-              
-	  .sp_menu_toggle{
+            
+           
+	  .sp_menu_toggle{display:none;
 	  			width:100%;
             	 background-color: #ff6d77;
                 padding:2rem;
                 margin-left:-2rem;
               }
      
-     .sp_menu_toggle ul{list-style: none;}      
-    .sp_menu_toggle li{list-style: none;
+     .sp_menu_toggle ul{
+     					list-style: none;}      
+    .sp_menu_toggle li{
+    			list-style: none;
                    border-bottom: 1px solid #fff;
                  font-size:1.5rem; 
                  text-align:left;
